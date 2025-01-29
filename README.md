@@ -1,8 +1,8 @@
-# Wizia_Website
+# Governing_Docs
 
 ## Live Demo
 
-### [Visit us ➡️ Wizia_Website](https://wizia-kazimorwan498.netlify.app/)
+### [Visit us ➡️ Governing_Docs](https://governingdocs-kazimorwan498.netlify.app/)
 
 ## 💫 About Me
 
