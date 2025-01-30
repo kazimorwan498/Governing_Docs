@@ -8,7 +8,7 @@ export default function MobileNav({ toggleMenu }) {
 			<div className="flex justify-between items-center pb-6">
 				<Logo />
 				<button
-					className="text-black text-2xl cursor-pointer"
+					className="text-black text-2xl p-2 cursor-pointer rounded-full hover:bg-gray-100 active:bg-gray-200 transition-colors"
 					aria-label="Close Menu"
 					onClick={toggleMenu}
 				>
@@ -18,7 +18,7 @@ export default function MobileNav({ toggleMenu }) {
 						viewBox="0 0 24 24"
 						strokeWidth={1.5}
 						stroke="currentColor"
-						className="size-10"
+						className="size-8"
 					>
 						<path
 							strokeLinecap="round"
