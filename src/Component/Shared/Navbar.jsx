@@ -2,13 +2,18 @@ import Buttons from "../Global/Buttons";
 import Container from "../Global/Container";
 import Logo from "./Logo";
 import { navItems } from "../../lib/db/index";
+import MobileNav from "./MobileNav";
+import { useState } from "react";
 
 export default function Navbar() {
+	const [IsMenuOpen, setIsMenuOpen] = useState(false);
+	const toggleMenu = () => setIsMenuOpen((prv) => !prv);
+
 	return (
 		<>
 			<nav className="py-5">
 				<Container>
-					<div className="flex justify-between items-center gap-2.5 px-2 sm:ps-5 xl:ps-[30px] sm:pe-3 xl:pe-5 py-2 sm:py-3.5 xl:py-5 bg-white rounded-full">
+					<div className="flex justify-between items-center gap-2.5 px-2 sm:px-5 xl:px-[30px] py-2 sm:py-3.5 xl:py-5 bg-white rounded-full">
 						<Logo />
 						<ul className="hidden min-[940px]:flex justify-center items-center gap-3 xl:gap-4">
 							{navItems.map(({ label, link }, index) => (
@@ -23,16 +28,18 @@ export default function Navbar() {
 							))}
 						</ul>
 						<div className="flex justify-center items-center gap-2.5">
-							<div>
-								<button className="inline-block min-[940px]:hidden space-y-1">
-									<span className="block w-6 h-0.5 bg-black" />
-									<span className="block w-6 h-0.5 bg-black" />
-									<span className="block w-6 h-0.5 bg-black" />
-								</button>
-							</div>
-							<Buttons>Get Started Today</Buttons>
+							<button
+								className="inline-block min-[940px]:hidden space-y-1 cursor-pointer p-4 rounded-full group/smMenuBtn hover:bg-gray-400 transition-colors"
+								onClick={toggleMenu}
+							>
+								<span className="block w-6 h-0.5 bg-black group-hover/smMenuBtn:bg-white transition-colors" />
+								<span className="block w-6 h-0.5 bg-black group-hover/smMenuBtn:bg-white transition-colors" />
+								<span className="block w-6 h-0.5 bg-black group-hover/smMenuBtn:bg-white transition-colors" />
+							</button>
+							<Buttons className="hidden sm:inline-block">Get Started Today</Buttons>
 						</div>
 					</div>
+					{IsMenuOpen && <MobileNav toggleMenu={toggleMenu} />}
 				</Container>
 			</nav>
 		</>
