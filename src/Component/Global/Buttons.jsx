@@ -1,5 +1,6 @@
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
 
+// eslint-disable-next-line react/prop-types
 export default function Buttons({ children, className }) {
 	return (
 		<>
