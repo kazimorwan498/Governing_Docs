@@ -1,5 +1,4 @@
 import { navItems } from "../../lib/db";
-import Buttons from "../Global/Buttons";
 import Logo from "./Logo";
 
 export default function MobileNav({ toggleMenu }) {
@@ -34,15 +33,29 @@ export default function MobileNav({ toggleMenu }) {
 					<li key={index}>
 						<a
 							href={link}
-							className="block text-lg text-accent hover:text-secondary hover:bg-primary hover:px-5 py-3 transition-all hover:font-bold rounded-lg"
+							className="block text-lg text-accent hover:text-secondary hover:bg-primary hover:px-5 active:text-secondary active:bg-primary active:px-5 py-3 transition-all hover:font-bold active:font-bold rounded-lg"
 						>
 							{label}
 						</a>
 					</li>
 				))}
-				<Buttons className="sm:hidden inline-block">
+				<button className="block sm:hidden text-lg text-accent hover:text-secondary hover:bg-primary hover:px-5 active:text-secondary active:bg-primary active:px-5 py-3 transition-all hover:font-bold active:font-bold rounded-lg w-full text-start cursor-pointer group/gst">
 					Get Started Today
-				</Buttons>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						strokeWidth={1.5}
+						stroke="currentColor"
+						className="size-6 hidden ms-4 group-hover/gst:inline group-active/gst:inline"
+					>
+						<path
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+						/>
+					</svg>
+				</button>
 			</ul>
 		</div>
 	);
