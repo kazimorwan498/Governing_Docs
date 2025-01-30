@@ -21,3 +21,12 @@
 body {
 	@apply font-NunitoSans;
 }
+
+.gradient-border {
+	border-image-source: linear-gradient(
+		180deg,
+		rgb(0, 210, 255) 0%,
+		rgb(5, 157, 190) 100%
+	);
+	border-image-slice: 1;
+}

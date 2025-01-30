@@ -5,8 +5,9 @@ import Navbar from "./Component/Shared/Navbar";
 function App() {
 	return (
 		<>
-			<main className="bg-cyan-400">
+			<main className="">
 				<Navbar />
+				<div className="min-h-[50svh]"></div>
 				<Footer />
 			</main>
 		</>

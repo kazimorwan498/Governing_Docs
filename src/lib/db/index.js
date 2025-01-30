@@ -20,3 +20,22 @@ export const navItems = [
 		link: "faq",
 	},
 ];
+
+export const SocialLinks = [
+	{
+		icon: "/fb.svg",
+		links: "https://www.facebook.com/kazimorwan498",
+	},
+	{
+		icon: "/instagram.svg",
+		links: "https://www.instagram.com/kazimorwan498",
+	},
+	{
+		icon: "/in.svg",
+		links: "https://www.instagram.com/kazimorwan498",
+	},
+	{
+		icon: "/x.svg",
+		links: "https://x.com/kazimorwan498",
+	},
+];
