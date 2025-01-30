@@ -1,1 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Grotesk:wght@300..700&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+	/* Font Family's */
+	--font-SpaceGrotesk: "Space Grotesk", serif;
+	--font-NunitoSans: "Nunito Sans", serif;
+
+	/* Colors */
+	--color-primary: rgb(0, 210, 255);
+	--color-secondary: rgb(45, 45, 45);
+	--color-accent: rgb(102, 102, 102);
+
+	/* Gradient Colors */
+	--gradient-primary: 180deg, rgb(0, 210, 255) 0%, rgb(5, 157, 190) 100%;
+	--gradient-secondary: 161.45deg, rgb(0, 210, 255) -5.54%,
+		rgb(154, 237, 255) 59.11%;
+}
