@@ -13,7 +13,7 @@ export default function ProblemSolution() {
 				{/* ProblemSolution Cards */}
 				<div className="pt-10 grid grid-cols-4 place-items-center gap-[30px]">
 					{ProblemSolutionData.map((item, index) => (
-						<ProblemSolutionCard key={index} />
+						<ProblemSolutionCard key={index} {...item} />
 					))}
 				</div>
 			</Container>

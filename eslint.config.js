@@ -34,7 +34,7 @@ export default [
 				{ allowConstantExport: true },
 			],
 
-			// "eslint-disable-next-line react/prop-types": false,
+			"eslint-disable-next-line react/prop-types": false,
 		},
 	},
 ];

@@ -1,21 +1,15 @@
-export default function ProblemSolutionCard() {
+export default function ProblemSolutionCard({ img, title, des1, des2 }) {
 	return (
 		<div className="w-[272px] h-[349px] rounded-[20px] p-5 space-y-5 shadow-ps-card bg-white hover:bg-primary group/ps transition-colors border border-white">
 			<div className="flex items-center justify-center bg-linear-(--gradient-primary) size-[58px] rounded-full">
-				<img src="/ps-1.svg" alt="" />
+				<img src={img} alt={title} />
 			</div>
 			<h4 className="font-bold text-lg text-secondary group-hover/ps:text-white leading-none">
-				Problem
+				{title}
 			</h4>
-			<div className="text-accent space-y-2.5 group-hover/ps:text-white">
-				<p>
-					Managing legal documents can be complex, time-consuming, and
-					error-prone.
-				</p>
-				<p>
-					Outdated methods and manual processes put your business at
-					risk
-				</p>
+			<div className="text-accent space-y-2.5 group-hover/ps:text-white leading-">
+				<p>{des1}</p>
+				{des2 && <p>{des2}</p>}
 			</div>
 		</div>
 	);

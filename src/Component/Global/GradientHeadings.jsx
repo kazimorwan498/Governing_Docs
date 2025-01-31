@@ -1,6 +1,5 @@
 import { cn } from "../../lib/utils";
 
-// eslint-disable-next-line react/prop-types
 export default function GradientHeadings({ children, className }) {
 	return (
 		<span

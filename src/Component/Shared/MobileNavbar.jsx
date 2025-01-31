@@ -1,7 +1,6 @@
 import { MobileNavItems } from "../Global/NavItems";
 import Logo from "../Global/Logo";
 
-// eslint-disable-next-line react/prop-types
 export default function MobileNav({ toggleMenu }) {
 	return (
 		<div className="min-[940px]:hidden absolute top-0 left-0 w-full h-screen bg-white z-50 p-6 overflow-y-hidden">
