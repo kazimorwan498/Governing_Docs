@@ -1,6 +1,7 @@
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
 import GradientHeadings from "./GradientHeadings";
 
+// eslint-disable-next-line react/prop-types
 export default function Headings({ children, className, gradient }) {
 	return (
 		<h2

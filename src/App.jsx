@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./Component/Shared/Navbar";
 import Hero from "./Component/Landing/Hero";
 import Footer from "./Component/Shared/Footer";
+import ProblemSolution from "./Component/Landing/ProblemSolution";
 
 function App() {
 	return (
@@ -9,6 +10,7 @@ function App() {
 			<main className="bg-[url('/hero-bg.svg')] min-h-svh bg-no-repeat bg-top">
 				<Navbar />
 				<Hero />
+				<ProblemSolution />
 				<Footer />
 			</main>
 		</>
