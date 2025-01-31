@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./Component/Shared/Navbar";
 import Hero from "./Component/Landing/Hero";
 import Footer from "./Component/Shared/Footer";
-import ProblemSolution from "./Component/Landing/ProblemSolution";
+import ProblemSolution from "./Component/Landing/ProblemSolution/ProblemSolution";
 
 function App() {
 	return (

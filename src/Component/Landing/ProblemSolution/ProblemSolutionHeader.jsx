@@ -1,5 +1,5 @@
-import Headings from "../Global/Headings";
-import { Arrow } from "../Global/Icons";
+import Headings from "../../Global/Headings";
+import { Arrow } from "../../Global/Icons";
 
 export default function ProblemSolutionHeader() {
 	return (
