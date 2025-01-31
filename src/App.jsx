@@ -1,13 +1,14 @@
 import "./App.css";
-import Footer from "./Component/Shared/Footer";
 import Navbar from "./Component/Shared/Navbar";
+import Hero from "./Component/Landing/Hero";
+import Footer from "./Component/Shared/Footer";
 
 function App() {
 	return (
 		<>
-			<main className="">
+			<main className="bg-[url('/hero-bg.svg')] min-h-svh bg-no-repeat bg-top">
 				<Navbar />
-				<div className="min-h-[50svh]"></div>
+				<Hero />
 				<Footer />
 			</main>
 		</>

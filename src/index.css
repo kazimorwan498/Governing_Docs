@@ -19,7 +19,7 @@
 }
 
 body {
-	@apply font-NunitoSans;
+	@apply font-NunitoSans text-secondary;
 }
 
 .gradient-border {

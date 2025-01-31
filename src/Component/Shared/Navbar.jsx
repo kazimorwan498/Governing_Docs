@@ -11,10 +11,10 @@ export default function Navbar() {
 
 	return (
 		<>
-			<nav className="py-5">
+			<nav className="pt-5">
 				<Container>
 					<div className="flex justify-between items-center gap-2.5 px-5 sm:px-5 xl:px-[30px] py-2 sm:py-3.5 xl:py-5 bg-white rounded-full">
-						<Logo />
+						<Logo>GoverningDocs</Logo>
 						<NavItems />
 						<div className="flex justify-center items-center gap-2.5">
 							<button

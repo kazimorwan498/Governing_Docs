@@ -1,5 +1,6 @@
 import { SocialLinks } from "../../lib/db";
 import Container from "../Global/Container";
+import Logo from "../Global/Logo";
 import NavItems from "../Global/NavItems";
 
 export default function Footer() {
@@ -8,9 +9,7 @@ export default function Footer() {
 			<footer className="pt-5 lg:pt-24 bg-primary/5">
 				<Container>
 					<div className="flex flex-col min-[430px]:flex-row justify-between items-center gap-x-2.5 gap-y-5 py-5">
-						<h1 className="font-SpaceGrotesk text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold">
-							Ai GoverningDocs
-						</h1>
+						<Logo>Ai GoverningDocs</Logo>
 						<NavItems />
 						<div className="flex justify-center items-center gap-2.5">
 							{SocialLinks.map(({ icon, links }, index) => (
