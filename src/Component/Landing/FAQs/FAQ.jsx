@@ -9,7 +9,7 @@ export default function FAQ() {
 	const handleChange = (index) => setActive(Active === index ? -1 : index);
 
 	return (
-		<section className="py-[30px] sm:py-20 lg:py-[100px] xl:py-[150px] px-2.5 mt-5 md:mt-[50px] bg-[url(/faq-bg.svg)] bg-no-repeat bg-left-top">
+		<section className="py-[30px] sm:py-20 lg:py-[100px] xl:py-[150px] px-2.5 mt-5 md:mt-[50px] relative">
 			<Container className="max-w-[982px]">
 				<Headings gradient="Asked Questions" className="text-center">
 					Frequently
@@ -26,6 +26,12 @@ export default function FAQ() {
 					))}
 				</div>
 			</Container>
+
+			<img
+				src="/faq-bg.svg"
+				alt="faq-bg"
+				className="absolute top-[30px] left-0 !h-[590px] !w-[1045px] -z-10"
+			/>
 		</section>
 	);
 }

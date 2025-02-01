@@ -6,7 +6,7 @@ export default function FAQCard({ que, ans, onClick, isActive }) {
 		<div className="shadow-faq rounded-[20px] py-5 px-[30px] bg-white">
 			<button
 				onClick={onClick}
-				className="inline-flex justify-between items-center gap-5 w-full"
+				className="inline-flex justify-between items-center gap-5 w-full cursor-pointer"
 			>
 				<h3 className="font-bold text-lg lg:text-[26px] lg:leading-[36px] text-start">
 					{que}
