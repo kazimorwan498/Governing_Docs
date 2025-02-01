@@ -12,16 +12,16 @@ export default function Reviews() {
 	const ActiveReviews = ReviewsCardDate[Active];
 
 	return (
-		<section className="my-[150px] bg-[rgba(246,246,246,1)] py-20">
+		<section className="bg-[rgba(246,246,246,1)] my-[50px] sm:my-20 lg:my-[100px] xl:my-[150px] py-10 lg:py-20">
 			<Container>
 				<Headings gradient="Our Client" className="text-center">
 					Reviews From
 				</Headings>
 
-				<div className="pt-10 flex justify-center items-center gap-[93px]">
-					<div className="flex gap-5 w-full">
+				<div className="pt-10 flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-20 xl:gap-[93px]">
+					<div className="flex gap-3 sm:gap-5 w-full">
 						{/* Review Active Line */}
-						<div className="space-y-[15px] bg-[rgb(226,222,216)] rounded-full">
+						<div className="space-y-2.5 sm:space-y-[15px] bg-[rgb(226,222,216)] rounded-full">
 							{Array.from(Array(3).keys()).map((i) => (
 								<div
 									key={i}
@@ -35,7 +35,7 @@ export default function Reviews() {
 						</div>
 
 						{/* Client Reviews */}
-						<div className="space-y-[15px] flex-grow">
+						<div className="space-y-2.5 sm:space-y-[15px] flex-grow">
 							{ReviewsCardDate.map((reviews, index) => (
 								<ReviewsCard
 									key={index}

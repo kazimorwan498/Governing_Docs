@@ -5,7 +5,7 @@ export default function ReviewsCard({ name, img, type, Active, onClick }) {
 		<button
 			onClick={onClick}
 			className={cn(
-				"inline-flex justify-normal items-center gap-[13px] border border-primary rounded-[20px] w-[491px] py-3 px-5 cursor-pointer",
+				"inline-flex justify-normal items-center gap-[13px] border border-primary rounded-[20px] w-full lg:w-[400px] xl:w-[491px] py-3 px-5 cursor-pointer",
 				Active && "bg-linear-(--gradient-primary) border-white"
 			)}
 		>
