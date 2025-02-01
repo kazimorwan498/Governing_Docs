@@ -64,3 +64,39 @@ export const ProblemSolutionData = [
 		des1: "Ensure all your documents meet the latest regulatory standards.",
 	},
 ];
+
+export const ReviewsCardDate = [
+	{
+		name: "David",
+		img: "client-1.svg",
+		type: "Happy Client",
+		review: {
+			stars: 4,
+			title: "Highly Recommend!",
+			details:
+				"The service was user-friendly and met all my expectations.",
+		},
+	},
+	{
+		name: "John Smith",
+		img: "client-2.svg",
+		type: "Happy Client",
+		review: {
+			stars: 5,
+			title: "It Was An Amazing Experience!",
+			details:
+				"The AI features saved us countless hours and ensured our compliance was spot on.",
+		},
+	},
+	{
+		name: "Ronald Richards",
+		img: "client-3.svg",
+		type: "Happy Client",
+		review: {
+			stars: 5,
+			title: "Outstanding Support!",
+			details:
+				"The customer support team was quick to resolve my issues.",
+		},
+	},
+];
