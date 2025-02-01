@@ -100,3 +100,30 @@ export const ReviewsCardDate = [
 		},
 	},
 ];
+
+export const PartnersLogo = [
+	{
+		src: "/partners-1.svg",
+		alt: "partners-1",
+	},
+	{
+		src: "/partners-2.svg",
+		alt: "partners-2",
+	},
+	{
+		src: "/partners-3.svg",
+		alt: "partners-3",
+	},
+	{
+		src: "/partners-4.svg",
+		alt: "partners-4",
+	},
+	{
+		src: "/partners-5.svg",
+		alt: "partners-5",
+	},
+	{
+		src: "/partners-6.svg",
+		alt: "partners-6",
+	},
+];

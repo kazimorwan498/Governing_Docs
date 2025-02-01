@@ -6,7 +6,7 @@ import NavItems from "../Global/NavItems";
 export default function Footer() {
 	return (
 		<>
-			<footer className="pt-5 lg:pt-24 bg-primary/5">
+			<footer className="pt-5 lg:pt-24 bg-[rgb(242,252,255)]">
 				<Container>
 					<div className="flex flex-col min-[430px]:flex-row justify-between items-center gap-x-2.5 gap-y-5 py-5">
 						<Logo>Ai GoverningDocs</Logo>

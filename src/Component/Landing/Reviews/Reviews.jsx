@@ -26,7 +26,7 @@ export default function Reviews() {
 								<div
 									key={i}
 									className={cn(
-										"w-[5px] h-[92px] bg-transparent rounded-full",
+										"w-[5px] h-[76px] sm:h-[92px] bg-transparent rounded-full",
 										Active === i &&
 											"bg-linear-(--gradient-primary)"
 									)}
@@ -48,18 +48,18 @@ export default function Reviews() {
 					</div>
 
 					{/* Review Details */}
-					<div className="space-y-[30px] w-full">
-						<h3 className="font-bold text-[30px]">
+					<div className="space-y-[15px] sm:space-y-[30px] w-full">
+						<h3 className="font-bold text-xl sm:text-2xl md:text-[30px]">
 							{ActiveReviews.review.title}
 						</h3>
 						<div className="flex items-center gap-[5px]">
 							{Array.from(
 								Array(ActiveReviews.review.stars).keys()
 							).map((i) => (
-								<Star key={i} />
+								<Star key={i} className="size-4 sm:size-auto" />
 							))}
 						</div>
-						<p className="text-base text-accent max-w-[530px]">
+						<p className="text-sm sm:text-base text-accent max-w-[530px]">
 							{ActiveReviews.review.details}
 						</p>
 					</div>

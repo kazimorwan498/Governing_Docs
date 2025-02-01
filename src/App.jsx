@@ -4,6 +4,7 @@ import Hero from "./Component/Landing/Hero";
 import Footer from "./Component/Shared/Footer";
 import ProblemSolution from "./Component/Landing/ProblemSolution/ProblemSolution";
 import Reviews from "./Component/Landing/Reviews/Reviews";
+import Partners from "./Component/Landing/Partners";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Hero />
 				<ProblemSolution />
 				<Reviews />
+				<Partners />
 				<Footer />
 			</main>
 		</>

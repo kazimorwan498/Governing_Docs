@@ -11,7 +11,7 @@ export default function ProblemSolution() {
 				<ProblemSolutionHeader />
 
 				{/* ProblemSolution Cards */}
-				<div className="pt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-5 lg:gap-[30px]">
+				<div className="pt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-10 lg:gap-[30px]">
 					{ProblemSolutionData.map((item, index) => (
 						<ProblemSolutionCard key={index} {...item} />
 					))}
