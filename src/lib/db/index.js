@@ -127,3 +127,18 @@ export const PartnersLogo = [
 		alt: "partners-6",
 	},
 ];
+
+export const FAQsData = [
+	{
+		que: "Is my data secure?",
+		ans: "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more.",
+	},
+	{
+		que: "What types of documents can Ai GoverningDocs generate?",
+		ans: "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more.",
+	},
+	{
+		que: "Can I customize the documents?",
+		ans: "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more.",
+	},
+];

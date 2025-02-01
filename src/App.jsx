@@ -5,6 +5,7 @@ import Footer from "./Component/Shared/Footer";
 import ProblemSolution from "./Component/Landing/ProblemSolution/ProblemSolution";
 import Reviews from "./Component/Landing/Reviews/Reviews";
 import Partners from "./Component/Landing/Partners";
+import FAQ from "./Component/Landing/FAQs/FAQ";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<ProblemSolution />
 				<Reviews />
 				<Partners />
+				<FAQ />
 				<Footer />
 			</main>
 		</>

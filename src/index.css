@@ -21,6 +21,7 @@
 	/* Shadow */
 	--shadow-btn-arrow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 	--shadow-ps-card: 0px 10px 30px 0px rgba(2, 182, 220, 0.15);
+	--shadow-faq: 0px 0px 25px 0px rgba(2, 182, 220, 0.15);
 }
 
 body {
