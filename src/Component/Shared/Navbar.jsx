@@ -2,12 +2,21 @@ import Buttons from "../Global/Buttons";
 import Container from "../Global/Container";
 import Logo from "../Global/Logo";
 import MobileNav from "./MobileNavbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavItems from "../Global/NavItems";
 
 export default function Navbar() {
 	const [IsMenuOpen, setIsMenuOpen] = useState(false);
 	const toggleMenu = () => setIsMenuOpen((prv) => !prv);
+
+	useEffect(() => {
+		const bodyClass = document.body.classList;
+		IsMenuOpen
+			? bodyClass.add("overflow-hidden")
+			: bodyClass.remove("overflow-hidden");
+
+		return () => bodyClass.remove("overflow-hidden");
+	}, [IsMenuOpen]);
 
 	return (
 		<>
