@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ReviewsCardDate } from "../../../lib/db";
+import { ReviewsCardData } from "../../../lib/db";
 import Container from "../../Global/Container";
 import Headings from "../../Global/Headings";
 import { Star } from "../../Global/Icons";
@@ -9,7 +9,7 @@ import { cn } from "../../../lib/utils";
 export default function Reviews() {
 	const [Active, setActive] = useState(1);
 
-	const ActiveReviews = ReviewsCardDate[Active];
+	const ActiveReviews = ReviewsCardData[Active];
 
 	return (
 		<section className="bg-[rgba(246,246,246,1)] my-[50px] sm:my-20 lg:my-[100px] xl:my-[150px] py-10 lg:py-20">
@@ -36,7 +36,7 @@ export default function Reviews() {
 
 						{/* Client Reviews */}
 						<div className="space-y-2.5 sm:space-y-[15px] flex-grow">
-							{ReviewsCardDate.map((reviews, index) => (
+							{ReviewsCardData.map((reviews, index) => (
 								<ReviewsCard
 									key={index}
 									Active={Active === index}

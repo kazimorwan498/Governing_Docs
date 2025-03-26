@@ -65,7 +65,7 @@ export const ProblemSolutionData = [
 	},
 ];
 
-export const ReviewsCardDate = [
+export const ReviewsCardData = [
 	{
 		name: "David",
 		img: "client-1.svg",
